@@ -567,10 +567,6 @@ video {
   }
 }
 
-  li {
-  cursor: pointer;
-}
-
   button {
   border-radius: 0.75rem;
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -714,6 +710,9 @@ video {
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.cursor-default {
+  cursor: default;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -1109,10 +1108,6 @@ html {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:gap-x-32 {
-    column-gap: 8rem;
   }
 
   .lg\:gap-x-24 {

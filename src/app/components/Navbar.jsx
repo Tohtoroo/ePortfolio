@@ -54,10 +54,11 @@ const Navbar = () => {
 
             <div onClick = {handleNav} className = {`md:hidden fixed left-0 top-0 w-full h-screen overlay z-[99] ${
           nav ? "bg-visible" : "bg-hidden"}`}>
-            
+
                 <div className = {nav ? 
                 'fixed left-0 top-0 h-screen w-[75%] sm:w-[60%] md:w-[45%] bg-[#ecf0f3] p-10 ease-in duration-500' : 
-                'fixed left-[-100%] top-0 h-screen p-10 ease-in duration-500'}>
+                'fixed left-[-100%] top-0 h-screen p-10 ease-in duration-500'}
+                onClick={(e) => e.stopPropagation()}>
                 <div>
                     <div className = 'flex w-full items-center justify-between'>
                     <a href = './'>
@@ -79,17 +80,17 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className = 'py-4 flex flex-col'>
+                <div className = 'py-4 flex flex-col cursor-default'>
                     <ul className = 'uppercase'>
-                        <a href = './'>
-                        <li className = 'py-4 text-sm'>Home</li>
-                        </a>
-                        <a href = './about'>
-                        <li className = 'py-4 text-sm'>About</li>
-                        </a>
-                        <a href = './reflections'>
-                        <li className = 'py-4 text-sm'>Reflections</li>
-                        </a>
+                        
+                        <li className = 'py-4 text-sm'><a href = './'>Home</a></li>
+                        
+                        
+                        <li className = 'py-4 text-sm'><a href = './about'>About</a></li>
+                        
+                        
+                        <li className = 'py-4 text-sm'><a href = './reflections'>Reflections</a></li>
+                        
                     </ul>
                     <div className = 'pt-40'>
                         <p className = 'uppercase tracking-widest text-[#5651e5]'>Let's Connect</p>
