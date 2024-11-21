@@ -1102,6 +1102,14 @@ html {
   .md\:pt-20 {
     padding-top: 5rem;
   }
+
+  .md\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .md\:pr-8 {
+    padding-right: 2rem;
+  }
 }
 
 @media (min-width: 1024px) {

@@ -18,14 +18,14 @@ const Navbar = () => {
     <>
         <div style ={{backgroundColor: '#ecf0f3'}}
          className = 'w-full h-20 shadow-xl z-[100] fixed'>
-            <div className = 'flex justify-between items-center h-full w-full px-2 2xl:px-16 pr-4'>
+            <div className = 'flex justify-between items-center h-full w-full px-2 2xl:px-16 pr-4 pl-4 md:pl-8 md:pr-8'>
                 {/*lazy loading of images*/}
                 <a href = './'>
                 <Image 
                 src = "/assets/Logo.png" 
                 priority
                 alt = '/' 
-                width = '90' 
+                width = '60' 
                 height = '50'/>
                 </a>
                 <div>
@@ -66,7 +66,7 @@ const Navbar = () => {
                     src = "/assets/Logo.png" 
                     alt = '/' 
                     priority
-                    width = '87' 
+                    width = '65' 
                     height = '35'/>
                     </a>
                     <div onClick = {handleNav} className = 'rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
