@@ -19,33 +19,35 @@ const Navbar = () => {
     <>
         <div style ={{backgroundColor: '#ecf0f3'}}
          className = 'w-full h-20 shadow-xl z-[100] fixed'>
-            <div className = 'flex justify-between items-center h-full w-full px-2 2xl:px-16'>
+            <div className = 'flex justify-between items-center h-full w-full px-2 2xl:px-16 pr-4'>
                 {/*lazy loading of images*/}
+                <a href = './'>
                 <Image 
                 src = "/assets/Logo.png" 
                 priority
                 alt = '/' 
                 width = '90' 
                 height = '50'/>
+                </a>
                 <div>
                     <ul className = 'hidden md:flex'>
-                        <Link href = './'> 
+                        <a href = './'> 
                             <li className = 'ml-10 text-sm uppercase hover:border-b'>
                                 Home
                             </li> 
-                        </Link>
-                        <Link href = './about'> 
+                        </a>
+                        <a href = './about'> 
                             <li className = 'ml-10 text-sm uppercase hover:border-b'>
                                 About
                             </li> 
-                        </Link>
-                        <Link href = './reflections'>
+                        </a>
+                        <a href = './reflections'>
                             <li className = 'ml-10 text-sm uppercase hover:border-b'>
                                 Reflections
                             </li>
-                        </Link>
+                        </a>
                     </ul>
-                    <div onClick = {handleNav} className = 'md:hidden cursor-pointer'>
+                    <div onClick = {handleNav} className = 'md:hidden cursor-pointer pr-2'>
                         <AiOutlineMenu size = {25} />
                     </div>
                 </div>
@@ -57,12 +59,14 @@ const Navbar = () => {
                 'fixed left-[-100%] top-0 h-screen p-10 ease-in duration-500'}>
                 <div>
                     <div className = 'flex w-full items-center justify-between'>
+                    <a href = './'>
                     <Image 
                     src = "/assets/Logo.png" 
                     alt = '/' 
                     priority
                     width = '87' 
                     height = '35'/>
+                    </a>
                     <div onClick = {handleNav} className = 'rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                         <AiOutlineClose/>
                     </div>
@@ -76,15 +80,15 @@ const Navbar = () => {
 
                 <div className = 'py-4 flex flex-col'>
                     <ul className = 'uppercase'>
-                        <Link href = './'>
+                        <a href = './'>
                         <li className = 'py-4 text-sm'>Home</li>
-                        </Link>
-                        <Link href = './about'>
+                        </a>
+                        <a href = './about'>
                         <li className = 'py-4 text-sm'>About</li>
-                        </Link>
-                        <Link href = './reflections'>
+                        </a>
+                        <a href = './reflections'>
                         <li className = 'py-4 text-sm'>Reflections</li>
-                        </Link>
+                        </a>
                     </ul>
                     <div className = 'pt-40'>
                         <p className = 'uppercase tracking-widest text-[#5651e5]'>Let's Connect</p>

@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-visible {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.bg-hidden {
+  background-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
 .ReactModal__Overlay {
   opacity: 0;
   transition: opacity 0.1s ease-in-out;

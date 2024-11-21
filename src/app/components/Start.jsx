@@ -110,7 +110,7 @@ const Start = () => {
   };
 
   return (
-    <div id='main' className='w-full min-h-screen flex flex-col justify-center items-center text-center pt-20'>
+    <div id='main' className='w-full min-h-screen flex flex-col md:justify-center md:items-center text-center pt-40 md:pt-20'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center'>
         {/* Header Section */}
         <div className={`${fadeInHeader ? 'fade-in' : 'fade-out'} transition-opacity duration-500`}>
