@@ -52,7 +52,10 @@ const About = () => {
 
         {/* Image with Lightbox */}
         <div
-  className='sticky top-[calc(50%+80px)] transform -translate-y-1/2 w-auto h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 cursor-pointer'
+  className={`${
+    // Responsive classes for sticky and transform for medium screens and above
+    'md:sticky md:top-[calc(50%+80px)] md:transform md:-translate-y-1/2'
+  } mt-4 w-full max-w-[50%] md:max-w-[80%] h-auto m-auto shadow-lg shadow-gray-400 rounded-xl flex items-center justify-center p-4 md:p-4 hover:scale-105 ease-in duration-300 cursor-pointer`}
   onClick={openModal}
 >
   <Image

@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import About from '../components/About'
 
 export const metadata: Metadata = {
-  title: 'About NHS4001A Aeron Toh',
+  title: 'Path of Reflection About',
   description: '...',
   icons: {
     icon: '../assets/Logo.png',

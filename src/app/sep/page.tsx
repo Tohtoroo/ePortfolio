@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import SEP from '../components/SEP'
 
 export const metadata: Metadata = {
-  title: 'Year 3 NHS4001A Aeron Toh',
+  title: 'Path of Reflection Year 3',
   description: '...',
   icons: {
     icon: '../assets/Logo.png',

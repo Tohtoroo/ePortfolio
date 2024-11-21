@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Start from '../components/Start';
 
 export const metadata: Metadata = {
-  title: 'Start NHS4001A Aeron Toh',
+  title: 'Path of Reflection Start',
   description: '...',
   icons: {
     icon: '../assets/Logo.png',
