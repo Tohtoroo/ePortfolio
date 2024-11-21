@@ -54,7 +54,7 @@ const Start = () => {
         header: <><span className="font-bold text-[#5651e5]">Concluding</span> Post </>,
         text: (
           <>
-            To access the concluding post, you'll have to click on each of the post grey box <span className="font-bold text-[#5651e5]">at least once</span>, and it'll <span className="font-bold text-[#5651e5]">unlock</span> the final concluding post at the bottom. There is no order as to which reflection needs to be opened/read first. 
+            To access the concluding post, you'll have to click on each of the box containing the reflections <span className="font-bold text-[#5651e5]">at least once</span>, and it'll <span className="font-bold text-[#5651e5]">unlock</span> the final concluding post at the bottom. There is no order as to which reflection needs to be opened/read first. <br/> As an example before we go into the actual page containing my reflections, try it out below!
           </>
           ),
           showUnlockablePost: true,
@@ -157,7 +157,7 @@ const Start = () => {
               {/* Centered Concluding Post Box */}
               <div
                 className={`w-[250px] rounded-xl shadow-lg p-8 text-center transition-all duration-500 ${
-                  isConcludingPostUnlocked ? 'bg-[#5651e5] text-white' : 'bg-gray-400'
+                  isConcludingPostUnlocked ? 'bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white' : 'bg-gray-400'
                 }`}
               >
                 <p>{isConcludingPostUnlocked ? 'Concluding Post Unlocked!' : 'Concluding Post (Locked)'}</p>

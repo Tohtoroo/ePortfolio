@@ -1,6 +1,31 @@
-import React from 'react';
+'use client'
+
+import React, {useState} from 'react';
+import Image from "next/image";
+import Modal from 'react-modal';
+import { AiOutlineClose } from "react-icons/ai";
 
 const Admission = () => {
+
+  const styleImage = {
+    display: "flex",
+    justifyContent: "center",
+    cursor: "pointer",
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setSelectedImage(null);
+  };
+  
   return (
     <div className="p-6 max-w-4xl mx-auto text-gray-700 flex flex-col pt-40">
       {/* Introduction */}
@@ -15,6 +40,16 @@ const Admission = () => {
 
       {/* Figure 1 */}
       <div className="text-center mt-6">
+        <div style = {styleImage} onClick={() => openModal("/assets/USR/Admission_Fig1.jpg")}>
+        <Image
+        src = "/assets/USR/Admission_Fig1.jpg"
+        style={{objectFit:"scale-down"}}
+        priority
+        alt = "/"
+        width= "250"
+        height= "250"
+      />
+      </div>
         <em>Figure 1. A text in WhatsApp (yes, it was that long ago) after the interview where I mentioned my answer, dating 26th January 2019.</em>
       </div>
 
@@ -24,6 +59,26 @@ const Admission = () => {
 
       {/* Figure 2 */}
       <div className="text-center mt-6">
+      <div style={styleImage} onClick={() => openModal("/assets/USR/Admission_Fig2a.png")}>
+  <Image
+    src="/assets/USR/Admission_Fig2a.png"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="400"
+  />
+</div>
+        <div style={styleImage} onClick={() => openModal("/assets/USR/Admission_Fig2b.jpg")}>
+    <Image
+    src="/assets/USR/Admission_Fig2b.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="250"
+  />
+</div>
         <em>Figure 2. The golden ratio in its algebraic and decimal form and the golden spiral which is defined using the golden ratio. The pictures were taken from Wikipedia, and Sketchplanations respectively.</em>
       </div>
 
@@ -41,6 +96,16 @@ const Admission = () => {
 
       {/* Figure 3 */}
       <div className="text-center mt-6">
+      <div style={styleImage} onClick={() => openModal("/assets/USR/Admission_Fig3.png")}>
+  <Image
+    src="/assets/USR/Admission_Fig3.png"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="500"
+    height="500"
+  />
+</div>
         <em>Figure 3. The final slide Professor Don showed us for the course NST2005: Doors of Perception, a course that I took in year 3 semester 2.</em>
       </div>
 
@@ -71,6 +136,16 @@ const Admission = () => {
 
       {/* Figure 4 */}
       <div className="text-center mt-6">
+      <div style={styleImage} onClick={() => openModal("/assets/USR/Admission_Fig4.png")}>
+      <Image
+    src="/assets/USR/Admission_Fig4.png"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="500"
+    height="500"
+  />
+  </div>
         <em>Figure 4. A slide depicting the answer to the Monty Hall problem solved using the Tree Approach in MA2116: Probability which I took in year 1 semester 2.</em>
       </div>
 
@@ -88,11 +163,31 @@ const Admission = () => {
 
       {/* Figure 5 */}
       <div className="text-center mt-6">
+      <div style={styleImage} onClick={() => openModal("/assets/USR/Admission_Fig5.jpg")}>
+      <Image
+    src="/assets/USR/Admission_Fig5.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="500"
+    height="500"
+  />
+  </div>
         <em>Figure 5. An excerpt of a reading in I of the Vortex by Rodolfo Llinás, which was assigned to us during the Biology section in Doors. Highlighted in yellow are the sentences I deemed was important back then to answer the questions posed in Figure 6 below.</em>
       </div>
 
       {/* Figure 6 */}
       <div className="text-center mt-6">
+      <div style={styleImage} onClick={() => openModal("/assets/USR/Admission_Fig6.jpg")}>
+      <Image
+    src="/assets/USR/Admission_Fig6.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="500"
+    height="500"
+  />
+  </div>
         <em>Figure 6. My answers to the questions posed in Professor Don's reading guide for the reading in Figure 5 back when I was taking the course. Due to my poor handwriting, I will transcribe what I wrote for point 3 in particular: “Things that do not change across life like light”.</em>
       </div>
 
@@ -102,6 +197,16 @@ const Admission = () => {
 
       {/* Figure 7 */}
       <div className="text-center mt-6">
+      <div style={styleImage} onClick={() => openModal("/assets/USR/Admission_Fig7.png")}>
+  <Image
+    src="/assets/USR/Admission_Fig7.png"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="500"
+    height="500"
+  />
+</div>
         <em>Figure 7. Slides from Doors. Images on the left are the way we would see the flowers, while the flowers on the right are the way insects would see the flowers since they can see ultraviolet light.</em>
       </div>
 
@@ -120,7 +225,47 @@ const Admission = () => {
       <p className = "mt-6">
       Ironically, my answer back then was pretty accurate to my opinion currently, despite my lack of knowledge at that point in time. By saying Mathematics is “derived”, gives the sense of duality of both discovery and invention. The invention of the language system of Mathematics really is an extension of something inherent in reality. And if one were to believe that these inherent universals in reality is a part of Mathematics, then it is thus both an invention and a discovery.
       </p>
-
+      {/* Modal Component */}
+      <Modal
+        isOpen={isOpen}
+        onRequestClose={closeModal}
+        ariaHideApp={false}
+        contentLabel="Image Lightbox"
+        style={{
+          overlay: { backgroundColor: 'rgba(0, 0, 0, 0.75)' },
+          content: {
+            top: '100px',
+            bottom: '40px',
+            left: '10%',
+            right: '10%',
+            padding: '20px',
+            borderRadius: '12px',
+            background: '#ecf0f3',
+          },
+        }}
+      >
+        <div className="flex justify-end">
+          <div
+            onClick={closeModal}
+            className="w-10 h-10 bg-[#ecf0f3] rounded-full flex items-center justify-center shadow-lg shadow-gray-400 cursor-pointer"
+          >
+            <AiOutlineClose className="text-gray-500 text-xl" />
+          </div>
+        </div>
+        {selectedImage && (
+          <div className="flex items-center justify-center" style ={styleImage}>
+            <Image
+              src={selectedImage}
+              alt="Selected Image"
+              style={{objectFit:"scale-down"}}
+              priority
+              width={800}
+              height={800}
+              className="rounded-xl object-contain"
+            />
+          </div>
+        )}
+      </Modal>
     </div>
   );
 };

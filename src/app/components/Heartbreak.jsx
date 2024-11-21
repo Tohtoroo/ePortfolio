@@ -1,6 +1,31 @@
-import React from 'react';
+'use client'
+
+import React, {useState} from 'react';
+import Image from "next/image";
+import Modal from 'react-modal';
+import { AiOutlineClose } from "react-icons/ai";
 
 const Heartbreak = () => {
+
+  const styleImage = {
+    display: "flex",
+    justifyContent: "center",
+    cursor: "pointer",
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setSelectedImage(null);
+  };
+
   return (
     <div className="p-6 max-w-4xl mx-auto text-gray-700 flex flex-col pt-40">
       {/* Introduction */}
@@ -9,6 +34,40 @@ const Heartbreak = () => {
 
       {/* Images with Caption */}
       <div className="text-center mt-6">
+        <div className = " m-auto md:grid grid-cols-3">
+        <div className = "col-span-1" style={styleImage} onClick={() => openModal("/assets/USR/Rationality_Fig1a.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig1a.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="400"
+  />
+</div>
+
+<div className = "col-span-1" style={styleImage} onClick={() => openModal("/assets/USR/Rationality_Fig1b.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig1b.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="500"
+    height="500"
+  />
+</div>
+
+<div className = "col-span-1" style={styleImage} onClick={() => openModal("/assets/USR/Rationality_Fig1c.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig1c.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="400"
+  />
+</div>
+        </div>
         <em>Figure 1. Personal texts from my friends on Telegram, describing me as rational throughout my time at university.</em>
       </div>
 
@@ -35,6 +94,16 @@ const Heartbreak = () => {
 
       {/* Additional Images and Captions */}
       <div className="text-center mt-6">
+      <div style={styleImage} onClick={() => openModal("/assets/USR/Rationality_Fig2.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig2.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="500"
+    height="500"
+  />
+</div>
         <em>Figure 2. Slides from MA1100: Basic Discrete Mathematics explaining mathematical proof-making back in Year 1 Semester 1.</em>
       </div>
 
@@ -44,16 +113,114 @@ const Heartbreak = () => {
 
       {/* Additional Images and Captions */}
       <div className="text-center mt-6">
+        <div className = "m-auto md:grid grid-cols-4">
+        <div style={styleImage} className = 'col-span-1' onClick={() => openModal("/assets/USR/Rationality_Fig3a.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig3a.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="500"
+    height="500"
+  />
+</div>
+
+<div style={styleImage} className = 'col-span-1' onClick={() => openModal("/assets/USR/Rationality_Fig3b.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig3b.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="500"
+    height="500"
+  />
+</div>
+
+
+<div style={styleImage} className = 'col-span-1' onClick={() => openModal("/assets/USR/Rationality_Fig3c.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig3c.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="500"
+    height="500"
+  />
+</div>
+
+<div style={styleImage} className ='col-span-1' onClick={() => openModal("/assets/USR/Rationality_Fig3d.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig3d.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="500"
+    height="500"
+  />
+</div>
+</div>    
         <em>Figure 3. My own assignment answers from MA2104: Multivariable Calculus, MA2101: Linear Algebra II, MA2202: Algebra I and MA3211: Complex Analysis I respectively. Marked in red are the signs of logical deductions used in my answer.</em>
       </div>
 
       {/* Additional Images and Captions */}
       <div className="text-center mt-6">
+      <div style={styleImage} onClick={() => openModal("/assets/USR/Rationality_Fig4.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig4.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="400"
+  />
+</div>
         <em>Figure 4. Module description on NUSMods of MA1100: Basic Discrete Mathematics, the module I took during my first semester of university. Marked in red is the portion which shows that I was taught the method to construct mathematical proofs based on logical reasoning.</em>
       </div>
 
       {/* Additional Images and Captions */}
       <div className="text-center mt-6">
+      <div className = "m-auto md:grid grid-cols-4">
+      <div style={styleImage} className = "col-span-1" onClick={() => openModal("/assets/USR/Rationality_Fig5a.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig5a.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="400"
+  />
+</div>
+<div style={styleImage} className = "col-span-1" onClick={() => openModal("/assets/USR/Rationality_Fig5b.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig5b.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="400"
+  />
+</div>
+<div style={styleImage} className = "col-span-1" onClick={() => openModal("/assets/USR/Rationality_Fig5c.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig5c.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="400"
+  />
+</div>
+<div style={styleImage} className = "col-span-1" onClick={() => openModal("/assets/USR/Rationality_Fig5d.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig5d.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="400"
+  />
+</div>
+</div>
         <em>Figure 5. Module descriptions on NUSMods of the modules whose assignments I showed in Figure 3. Marked in blue are the portions where we had to use logical deductions in order to construct the needed theorems for the course. The lack of red markings signify that we were never again taught the ways of logical reasoning in these modules.</em>
       </div>
 
@@ -63,6 +230,31 @@ const Heartbreak = () => {
 
       {/* Additional Images and Captions */}
       <div className="text-center mt-6">
+        <div className = "md: grid grid-cols-2 m-auto ">
+
+
+<div style={styleImage} className = "col-span-1" onClick={() => openModal("/assets/USR/Rationality_Fig6a.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig6a.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="250"
+  />
+</div>
+
+<div style={styleImage} className = "col-span-1" onClick={() => openModal("/assets/USR/Rationality_Fig6b.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig6b.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="250"
+  />
+        </div>
+        </div>
         <em>Figure 6. My own texts to my friends on Telegram describing myself as rational throughout my time at university. </em>
       </div>
 
@@ -76,7 +268,19 @@ const Heartbreak = () => {
 
       {/* Additional Images and Captions */}
       <div className="text-center mt-6">
-        <em>Figure 7. A text to my friend right after my ex and I broke up on 30th January 2023. </em>
+
+      <div style={styleImage} className = "col-span-1" onClick={() => openModal("/assets/USR/Rationality_Fig7.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig7.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="300"
+    height="250"
+  />
+        </div>
+
+        <em>Figure 7. A text to my friend right after my ex and I broke up, dating 30th January 2023. </em>
       </div>
 
       <p className = "mt-6">
@@ -92,12 +296,26 @@ const Heartbreak = () => {
         What may have seemed like a cursory reply reflected how I was rationalising the breakup &#8211; treating it as just an event, something to move past without dwelling on it. The rational side of me knew that I shouldn't spend time moping since I had many other commitments, and that was how I presented myself to others at the time.
       </p>
 
+      <p className = "mt-6">
+        2 weeks later, I was talking to the same friend in Figure 7.
+      </p>
+
       <div className="text-center mt-6">
-        <em>Figure 8. Texts between my friend and I detailing the aftermath of the breakup 2 weeks after it occurred on 18th February 2023. On the right is a mapping I did of my thought process back then. P1-4) are the predicates given the information I knew at differing points in time. P2) in particular was not evidenced by the texts, but was a context that I felt was necessary to include.</em>
+      <div style={styleImage} className = "col-span-1" onClick={() => openModal("/assets/USR/Rationality_Fig8.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig8.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="600"
+    height="600"
+  />
+        </div>
+        <em>Figure 8. Texts between my friend and I detailing the aftermath of the breakup 2 weeks after it occurred on 18th February 2023. On the right are annotations done in the present day, mapping out my thought process at the time of sending those text messages. P1-4) are the predicates given the information I knew at that time in the past. P2) in particular was not evidenced by the texts, but was a context that I felt was necessary to include.</em>
       </div>
 
       <p className = "mt-6">
-      2 weeks after the breakup, I was talking to the same friend. She asked if I still had any hope of getting back together with my ex-partner. I knew, logically, that I shouldn't be holding onto any hope, and with that thought in mind, I replied: 
+      As seen above, she asked if I still had any hope of getting back together with my ex-partner. I knew, logically, that I shouldn't be holding onto any hope, and with that thought in mind, I replied: 
       </p>
 
       <blockquote className="mt-6 border-l-4 border-gray-400 pl-4">
@@ -113,6 +331,48 @@ const Heartbreak = () => {
       </p>
 
       <div className="text-center mt-6">
+        <div className = "grid-cols-4 md: grid m-auto">
+          <div style = {styleImage} className = "col-span-1" onClick={() => openModal("/assets/USR/Rationality_Fig9a.jpg")}>
+        <Image
+    src="/assets/USR/Rationality_Fig9a.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="400"
+  />
+</div>
+<div style={styleImage} className = "col-span-1" onClick={() => openModal("/assets/USR/Rationality_Fig9b.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig9b.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="400"
+  />
+</div>
+<div style={styleImage} className = "col-span-1" onClick={() => openModal("/assets/USR/Rationality_Fig9c.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig9c.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="400"
+  />
+</div>
+<div style={styleImage} className = "col-span-1" onClick={() => openModal("/assets/USR/Rationality_Fig9d.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig9d.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="400"
+  />
+  </div>
+        </div>
         <em>Figure 9. Messages sent to myself when I was crying over the breakup, the latest dating 27th February 2023.</em>
       </div>
 
@@ -130,6 +390,17 @@ const Heartbreak = () => {
 
       {/* Additional Images and Captions */}
       <div className="text-center mt-6">
+
+      <div style={styleImage} className = "col-span-1" onClick={() => openModal("/assets/USR/Rationality_Fig10.jpg")}>
+  <Image
+    src="/assets/USR/Rationality_Fig10.jpg"
+    style={{objectFit:"scale-down"}}
+    priority
+    alt="/"
+    width="400"
+    height="400"
+  />
+        </div>
         <em>Figure 10. A message sent to myself, dating 1st March 2023.</em>
       </div>
 
@@ -137,6 +408,49 @@ const Heartbreak = () => {
       <p className="mt-6">
       A “fight” was how I described my inner turmoil at that point in time between my “logical side” and my “feelings side”. Perhaps, it may have been more accurate to say that I was fighting between what I expect of myself &#8211; rational, composed, and logical &#8211; versus who I really am: someone illogical, and flawed in so many ways. As I write this post, I am struggling to find a fitting end; it has been a difficult post to write, unravelling parts of myself that I've kept hidden for so long. It feels uncomfortable, and even a bit unsettling, to lay bare the messy parts of my thoughts during such emotionally tiresome periods, especially as someone who expects of myself to appear outwardly grounded in rationality. However, it also feels oddly cathartic to have reflected on what I have kept in Pandora's box. Maybe this post is the first step I am taking towards finding a better balance between my outward expectations of myself, and my inner emotions. And hopefully in doing so, I can better manage in showing my vulnerabilities in front of others without feeling as though I am losing my sense of self in the future.
       </p>
+
+            {/* Modal Component */}
+            <Modal
+        isOpen={isOpen}
+        onRequestClose={closeModal}
+        ariaHideApp={false}
+        contentLabel="Image Lightbox"
+        style={{
+          overlay: { backgroundColor: 'rgba(0, 0, 0, 0.75)' },
+          content: {
+            top: '100px',
+            bottom: '40px',
+            left: '10%',
+            right: '10%',
+            padding: '20px',
+            borderRadius: '12px',
+            background: '#ecf0f3',
+          },
+        }}
+      >
+        <div className="flex justify-end">
+          <div
+            onClick={closeModal}
+            className="w-10 h-10 bg-[#ecf0f3] rounded-full flex items-center justify-center shadow-lg shadow-gray-400 cursor-pointer"
+          >
+            <AiOutlineClose className="text-gray-500 text-xl" />
+          </div>
+        </div>
+        {selectedImage && (
+          <div className="flex items-center justify-center" style = {styleImage} >
+            <Image
+              src={selectedImage}
+              alt="Selected Image"
+              priority
+              style={{objectFit:"scale-down"}}
+              width={800}
+              height={800}
+              className="rounded-xl object-contain"
+            />
+          </div>
+        )}
+      </Modal>
+
     </div>
   );
 };

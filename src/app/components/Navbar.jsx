@@ -80,7 +80,7 @@ const Navbar = () => {
                         <li className = 'py-4 text-sm'>Home</li>
                         </Link>
                         <Link href = './about'>
-                        <li className = 'py-4 text-sm'>About me</li>
+                        <li className = 'py-4 text-sm'>About</li>
                         </Link>
                         <Link href = './reflections'>
                         <li className = 'py-4 text-sm'>Reflections</li>
