@@ -56,7 +56,7 @@ const Reflection = () => {
     },
     {
       heading: 'Year 3',
-      description: 'Revisiting Our Student Exchange Programme (SEP)',
+      description: 'Revisiting Our Student Exchange Programmes (SEP)',
       content: (
         <>
           <h2 className='font-bold mb-6'><span className="font-bold text-[#5651e5]">Revisiting</span> Our Student Exchange Programmes (SEP): <span className="font-bold text-[#5651e5]">Reflecting</span> on Academic Rigour across Different Countries</h2>
