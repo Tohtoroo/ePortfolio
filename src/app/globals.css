@@ -2,16 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.overlay {
+  transition: opacity 0.5s ease, background-color 0.5s ease;; /* Smooth transition for opacity */
+}
+
 .bg-visible {
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 1;
-  transition: opacity 0.3s ease, background-color 0.3s ease;
 }
 
 .bg-hidden {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0); /* Fully transparent */
   opacity: 0;
-  transition: opacity 0.3s ease, background-color 0.3s ease;
+  pointer-events: none; /* Prevent clicking on hidden background */
 }
 
 .ReactModal__Overlay {
@@ -34,6 +37,11 @@ html {
 .fade-in {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-special {
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out
 }
 
 .fade-out {
