@@ -754,9 +754,6 @@ video {
 .gap-8 {
   gap: 2rem;
 }
-.gap-x-32 {
-  column-gap: 8rem;
-}
 .gap-y-8 {
   row-gap: 2rem;
 }
@@ -1042,6 +1039,10 @@ html {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .sm\:gap-x-8 {
+    column-gap: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1108,6 +1109,14 @@ html {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:gap-x-32 {
+    column-gap: 8rem;
+  }
+
+  .lg\:gap-x-24 {
+    column-gap: 6rem;
   }
 }
 

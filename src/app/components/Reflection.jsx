@@ -128,7 +128,7 @@ const Reflection = () => {
 
       {/* Reflection Rectangles */}
       <div className={`w-full p-2 flex items-center py-4 ${fadeIn ? 'fade-in' : 'opacity-0'}`}>
-        <div className='max-w-[1240px] m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-32 gap-y-8'>
+        <div className='max-w-[1240px] m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:gap-x-8 lg:gap-x-24 gap-y-8'>
           {reflections.map((reflection, index) => (
             <div
               key={index}
