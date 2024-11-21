@@ -4,7 +4,7 @@ import Main from './components/Main'
 
 export const metadata: Metadata = {
   title: 'Path of Reflection Main',
-  description: '...',
+  description: 'Welcome to my e-portfolio!',
   icons: {
     icon: './assets/Logo.png',
   },
