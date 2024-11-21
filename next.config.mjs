@@ -8,6 +8,7 @@ const nextConfig = {
     images: {
         unoptimized: true, // Disable default image optimization
       },
+    basePath: "/eportfolio",
   };
 
 export default nextConfig;
