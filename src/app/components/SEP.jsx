@@ -29,7 +29,7 @@ const SEP = () => {
   return (
     <div className="p-6 max-w-4xl mx-auto text-gray-700 flex flex-col pt-40">
       {/* Introduction */}
-      <h2 className='font-bold mb-6'><span className="font-bold text-[#5651e5]">Revisiting</span> My Student Exchange Programme (SEP): <span className="font-bold text-[#5651e5]">Reflecting</span> on Academic Rigour across Different Countries</h2>
+      <h2 className='font-bold mb-6'><span className="font-bold text-[#5651e5]">Revisiting</span> Our Student Exchange Programmes (SEP): <span className="font-bold text-[#5651e5]">Reflecting</span> on Academic Rigour across Different Countries</h2>
       <p>This podcast was produced in collaboration with Viola and Shona.</p>
 
       {/* Embedded YouTube Video */}
