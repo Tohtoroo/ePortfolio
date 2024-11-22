@@ -67,21 +67,21 @@ const About = () => {
             />
           </div>
           <div className='flex justify-center mt-4 md:mt-4 lg:mt-8 sm:w-[80%] dynamic-gap-about'>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <a href="https://www.linkedin.com/in/aerontoh/" target='_blank' rel="noopener noreferrer" class='more-link'>
-                <FaLinkedinIn/>
-              </a>
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <a href="https://github.com/Tohtoroo" target='_blank' rel="noopener noreferrer" class='more-link'>
+            <a href="https://www.linkedin.com/in/aerontoh/" target='_blank' rel="noopener noreferrer" class='more-link'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <FaLinkedinIn />
+              </div>
+            </a>
+            <a href="https://github.com/Tohtoroo" target='_blank' rel="noopener noreferrer" class='more-link'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
                 <FaGithub />
-              </a>
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <a href="mailto:aerontoh@u.nus.edu">
+              </div>
+            </a>
+            <a href="mailto:aerontoh@u.nus.edu">
+              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
                 <AiOutlineMail />
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

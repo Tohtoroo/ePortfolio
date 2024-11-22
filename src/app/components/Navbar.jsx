@@ -93,22 +93,21 @@ const Navbar = () => {
                             <div className='pt-40'>
                                 <p className='uppercase tracking-widest text-[#5651e5]'>Let's Connect</p>
                                 <div className='flex items-center my-4 sm:w-[80%] dynamic-gap'>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                        <a href="https://www.linkedin.com/in/aerontoh/" target='_blank' rel="noopener noreferrer" class='more-link'>
+                                    <a href="https://www.linkedin.com/in/aerontoh/" target='_blank' rel="noopener noreferrer" class='more-link'>
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
                                             <FaLinkedinIn />
-                                        </a>
-                                    </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                        <a href="https://github.com/Tohtoroo" target='_blank' rel="noopener noreferrer" class='more-link'>
+                                        </div>
+                                    </a>
+                                    <a href="https://github.com/Tohtoroo" target='_blank' rel="noopener noreferrer" class='more-link'>
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
                                             <FaGithub />
-                                        </a>
-                                    </div>
-
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                        <a href="mailto:aerontoh@u.nus.edu">
+                                        </div>
+                                    </a>
+                                    <a href="mailto:aerontoh@u.nus.edu">
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
                                             <AiOutlineMail />
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
