@@ -3,7 +3,8 @@
 import Image from "next/image";
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMail } from "react-icons/ai";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,44 +31,59 @@ const About = () => {
             <p className='mt-4 text-gray-700'>
               I am a Mathematics (MA) student with a second major in Computer Science (CS) from the National University of Singapore (NUS), set to graduate in May of 2025.
             </p>
-            <h3 className = 'mt-4'>What is this e-Portfolio?</h3>
-            <p className ='mt-4 text-gray-700'> 
+            <h3 className='mt-4'>What is this e-Portfolio?</h3>
+            <p className='mt-4 text-gray-700'>
               It is an e-Portfolio mainly crafted for myself, to be a collection of individual reflections over major events at different years of my time in University, and one event prior to University (but rest assured, this event definitely impacted my University journey greatly).
             </p>
-            <p className = 'mt-4 text-gray-700'>
+            <p className='mt-4 text-gray-700'>
               At first, the great central theme is <span className='text-[#5651e5] font-bold'>revisiting</span> and <span className='text-[#5651e5] font-bold'>reflecting</span> the different moments of my past which has greatly shaped my perspective as a young adult soon to graduate. Upon further reflection however, I realised that there were particular memories that I gravitate towards revisiting. This epiphany of my meta-reflection is written in my concluding post.
             </p>
-            <p className = 'mt-4 text-gray-700'>
+            <p className='mt-4 text-gray-700'>
               Although this e-Portfolio is mainly crafted for myself, I do hope for the people who take the time to read through even one of my posts to have gained a new perspective. Whether it is a small insight on academic rigour, the importance of self reflection, finding a <i>door</i> which has shaped your perspective of reality, or simply a having a relatable moment, my hope is that my honest reflections resonate with you all.
             </p>
             <p className='mt-4 text-gray-700'>
-               Beyond that, I also see this as a way to document my growth &#8211; a snapshot of who I am at this pivotal stage of life before transitioning into an eventual career path. By reflecting on these formative experiences, I myself have gained many new perspective along the way, and would continue to do so in the future. Thank you all for joining me on this reflective exploration.
+              Beyond that, I also see this as a way to document my growth &#8211; a snapshot of who I am at this pivotal stage of life before transitioning into an eventual career path. By reflecting on these formative experiences, I myself have gained many new perspective along the way, and would continue to do so in the future. Thank you all for joining me on this reflective exploration.
             </p>
 
-            <h3 className = 'mt-4'>Why make your own website?</h3>
+            <h3 className='mt-4'>Why make your own website?</h3>
             <p className='mt-4 text-gray-700'>Well... aesthetics aside, I wanted a way to bring my audience on a similar route as me to lead to the concluding post. I've always liked that sort of <i>eureka</i> way of writing where the revelations are not handed upfront but unfold gradually, allowing the full image to emerge piece-by-piece. It is like putting together a puzzle without the guiding image on the box &#8211; you're building as you go, discovering the final picture only at the end. This approach felt true to how I experienced my own reflections, and I hoped to replicate that sense of discovery for my readers through this created website.</p>
 
           </>
         </div>
 
         {/* Image with Lightbox */}
-        <div
-  className={`${
-    // Responsive classes for sticky and transform for medium screens and above
-    'md:sticky md:top-[calc(50%+80px)] md:transform md:-translate-y-1/2'
-  } mt-4 w-full max-w-[50%] md:max-w-[80%] h-auto m-auto shadow-lg shadow-gray-400 rounded-xl flex items-center justify-center p-4 md:p-4 hover:scale-105 ease-in duration-300 cursor-pointer`}
-  onClick={openModal}
->
-  <Image
-    src="/assets/Personal.JPG"
-    alt="Personal Image"
-    priority
-    style={{ objectFit: 'scale-down' }}
-    width={300}
-    height={300}
-    className='rounded-xl'
-  />
-</div>
+        <div className="col-span-1 flex flex-col items-center md:sticky md:top-[calc(50%+40px)] md:transform md:-translate-y-1/2 w-full max-w-[50%] md:max-w-[80%] h-auto m-auto ">
+          <div className={'shadow-lg shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 cursor-pointer'}
+            onClick={openModal}
+          >
+            <Image
+              src="/assets/Personal.JPG"
+              alt="Personal Image"
+              priority
+              style={{ objectFit: 'scale-down' }}
+              width={300}
+              height={300}
+              className='rounded-xl'
+            />
+          </div>
+          <div className='flex justify-center mt-4 md:mt-4 lg:mt-8 sm:w-[80%] dynamic-gap-about'>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
+              <a href="https://www.linkedin.com/in/aerontoh/" target='_blank' rel="noopener noreferrer" class='more-link'>
+                <FaLinkedinIn/>
+              </a>
+            </div>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
+              <a href="https://github.com/Tohtoroo" target='_blank' rel="noopener noreferrer" class='more-link'>
+                <FaGithub />
+              </a>
+            </div>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
+              <a href="mailto:aerontoh@u.nus.edu">
+                <AiOutlineMail />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Modal for Lightbox */}
@@ -91,14 +107,14 @@ const About = () => {
       >
         {/* White Circular Close Button */}
         <div className='flex justify-end'>
-          <div 
-            onClick={closeModal} 
+          <div
+            onClick={closeModal}
             className='w-10 h-10 bg-[#ecf0f3] rounded-full flex items-center justify-center shadow-lg shadow-gray-400 cursor-pointer'
           >
             <AiOutlineClose className='text-gray-500 text-xl' />
           </div>
         </div>
-        
+
         {/* Expanded Image Content */}
         <div className='flex items-center justify-center'>
           <Image
@@ -109,6 +125,7 @@ const About = () => {
             height={500}
             className='rounded-xl object-contain'
           />
+
         </div>
       </Modal>
     </div>

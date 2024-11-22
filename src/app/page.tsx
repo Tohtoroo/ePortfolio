@@ -1,4 +1,4 @@
-import type {Metadata} from 'next'
+import type { Metadata } from 'next'
 import Navbar from './components/Navbar'
 import Main from './components/Main'
 
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div>
-      <Navbar/>
-      <Main/>
+      <Navbar />
+      <Main />
     </div>
   );
 }

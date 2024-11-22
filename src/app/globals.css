@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+.dynamic-gap {
+  gap: clamp(1rem, 7vw, 4rem); /* Adjust min, preferred, and max values */
+}
+
+.dynamic-gap-about {
+  gap: clamp(1rem, 3vw, 3rem); /* Adjust min, preferred, and max values */
+}
+
+a.more-link {
+  outline-color: transparent;
+}
+
+a.more-link:link {
+  color: #5651e5;
+  text-decoration: underline;
+}
+
+a.more-link:visited {
+  color: #3f3aaa;
+  text-decoration: underline;
+}
+
+a.more-link:focus {
+  text-decoration: none;
+}
+
+a.more-link:hover {
+  text-decoration: none;
+}
+
 .overlay {
   transition: opacity 0.5s ease, background-color 0.5s ease;; /* Smooth transition for opacity */
 }
