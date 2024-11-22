@@ -52,7 +52,7 @@ const About = () => {
         </div>
 
         {/* Image with Lightbox */}
-        <div className="col-span-1 flex flex-col items-center md:sticky md:top-[calc(50%+40px)] md:transform md:-translate-y-1/2 w-full max-w-[50%] md:max-w-[80%] h-auto m-auto ">
+        <div className={`col-span-1 flex flex-col items-center md:sticky md:top-[calc(50%+40px)] md:transform md:-translate-y-1/2 w-full max-w-[50%] md:max-w-[80%] h-auto m-auto ${fadeIn ? 'fade-in' : 'opacity-0'}`}>
           <div className={'shadow-lg shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 cursor-pointer'}
             onClick={openModal}
           >
