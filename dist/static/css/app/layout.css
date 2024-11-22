@@ -586,9 +586,6 @@ video {
 .fixed {
   position: fixed;
 }
-.sticky {
-  position: sticky;
-}
 .left-0 {
   left: 0px;
 }
@@ -597,9 +594,6 @@ video {
 }
 .top-0 {
   top: 0px;
-}
-.top-1\/2 {
-  top: 50%;
 }
 .z-\[100\] {
   z-index: 100;
@@ -623,18 +617,6 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-.my-32 {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -722,13 +704,6 @@ video {
 }
 .max-w-\[90\%\] {
   max-width: 90%;
-}
-.-translate-y-1\/2 {
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .cursor-default {
   cursor: default;
@@ -881,18 +856,6 @@ video {
 .pt-40 {
   padding-top: 10rem;
 }
-.pt-32 {
-  padding-top: 8rem;
-}
-.pt-64 {
-  padding-top: 16rem;
-}
-.pb-40 {
-  padding-bottom: 10rem;
-}
-.pb-32 {
-  padding-bottom: 8rem;
-}
 .text-center {
   text-align: center;
 }
@@ -1012,10 +975,6 @@ a.more-link:visited {
   text-decoration: underline;
 }
 
-a.more-link:focus {
-  text-decoration: none;
-}
-
 a.more-link:hover {
   text-decoration: none;
 }
@@ -1111,32 +1070,8 @@ html {
     position: sticky;
   }
 
-  .md\:top-\[calc\(50\%\+80px\)\] {
-    top: calc(50% + 80px);
-  }
-
-  .md\:top-\[calc\(50\%\+20px\)\] {
-    top: calc(50% + 20px);
-  }
-
-  .md\:top-\[calc\(50\%\+30px\)\] {
-    top: calc(50% + 30px);
-  }
-
   .md\:top-\[calc\(50\%\+40px\)\] {
     top: calc(50% + 40px);
-  }
-
-  .md\:top-\[calc\(50\%\+60px\)\] {
-    top: calc(50% + 60px);
-  }
-
-  .md\:bottom-20 {
-    bottom: 5rem;
-  }
-
-  .md\:mt-8 {
-    margin-top: 2rem;
   }
 
   .md\:mt-4 {
@@ -1182,10 +1117,6 @@ html {
 
   .md\:justify-center {
     justify-content: center;
-  }
-
-  .md\:p-4 {
-    padding: 1rem;
   }
 
   .md\:pl-8 {
