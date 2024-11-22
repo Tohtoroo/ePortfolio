@@ -32,10 +32,10 @@ const Reflection = () => {
     },
     {
       heading: 'Year 1',
-      description: 'Revisiting My Essay on Inequality',
+      description: 'Revisiting My Essay on Social Equality',
       content: (
         <>
-          <h2 className='font-bold mb-6'><span className="font-bold text-[#5651e5]">Revisiting</span> My Essay on Inequality: <span className="font-bold text-[#5651e5]">Reflecting</span> on My Experiences with Inequality</h2>
+          <h2 className='font-bold mb-6'><span className="font-bold text-[#5651e5]">Revisiting</span> My Essay on Social Equality: <span className="font-bold text-[#5651e5]">Reflecting</span> on My Experiences with Inequality</h2>
           <p>Reflection on my first year...</p>
           <Image src="/assets/Logo.png" alt="Logo" width={200} height={100} />
         </>
