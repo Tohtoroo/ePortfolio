@@ -20,7 +20,7 @@ const Start = () => {
       header: "Hello!",
       text: (
         <>
-          In my Year 4 Semester 1 of university from <span className="font-bold text-[#5651e5]">August 2024</span> to <span className="font-bold text-[#5651e5]">November 2024</span>, I took a <a href="https://nusmods.com/courses/NHS4001A/critical-reflection" rel="noopener noreferrer" class='more-link' target='_blank'>reflection course</a> as part of the <a href="https://usp.nus.edu.sg/" target='_blank' rel="noopener noreferrer" class='more-link'>University Scholars Programme's (USP)</a> curriculum.
+          In my Year 4 Semester 1 of university from <span className="font-bold text-[#5651e5]">August 2024</span> to <span className="font-bold text-[#5651e5]">November 2024</span>, I took a <a href="https://nusmods.com/courses/NHS4001A/critical-reflection" rel="noopener noreferrer" class='more-link' target='_blank'>reflection course</a> as part of the University Scholars Programme's (<a href="https://usp.nus.edu.sg/" target='_blank' rel="noopener noreferrer" class='more-link'>USP</a>) curriculum.
         </>
       ),
     },

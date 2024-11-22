@@ -37,7 +37,7 @@ const Main = () => {
             Told from the perspective of a Mathematics Major with a Second Major in Computer Science.
           </h3>
           <p className='py-2 text-gray-600 max-w-[70%] m-auto'>
-            As a current Year 4 student in the <a href="https://www.nus.edu.sg/" target='_blank' rel="noopener noreferrer" class='more-link'>National University of Singapore (NUS)</a>, I created this website as a place to collect my reflection on events from the start of my university journey, till now.
+            As a current Year 4 student in the National University of Singapore (<a href="https://www.nus.edu.sg/" target='_blank' rel="noopener noreferrer" class='more-link'>NUS</a>), I created this website as a place to collect my reflection on events from the start of my university journey, till now.
           </p>
 
           {/* Button to Trigger Fade-Out */}
