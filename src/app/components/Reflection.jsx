@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-modal';
 import Link from "next/link";
-import Image from "next/image";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Reflection = () => {
