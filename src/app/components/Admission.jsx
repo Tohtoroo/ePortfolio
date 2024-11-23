@@ -27,7 +27,7 @@ const Admission = () => {
   };
 
   return (
-    <div className="p-6 max-w-4xl mx-auto text-gray-700 flex flex-col pt-40">
+    <div className="p-6 max-w-4xl mx-auto text-gray-700 flex flex-col pt-40 mb-20">
       {/* Introduction */}
       <h2 className='font-bold mb-6'><span className="font-bold text-[#5651e5]">Revisiting</span> My USP Admission Interview: <span className="font-bold text-[#5651e5]">Reflecting</span> on a Deeper Understanding of the Philosophy of Mathematics</h2>
 

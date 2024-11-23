@@ -583,6 +583,9 @@ video {
   --tw-shadow-color: #9ca3af;
   --tw-shadow: var(--tw-shadow-colored);
 }
+.visible {
+  visibility: visible;
+}
 .fixed {
   position: fixed;
 }
@@ -618,6 +621,10 @@ video {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -641,6 +648,12 @@ video {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
 }
 .flex {
   display: flex;

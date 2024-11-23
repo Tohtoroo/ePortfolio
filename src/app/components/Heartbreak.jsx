@@ -27,7 +27,7 @@ const Heartbreak = () => {
   };
 
   return (
-    <div className="p-6 max-w-4xl mx-auto text-gray-700 flex flex-col pt-40">
+    <div className="p-6 max-w-4xl mx-auto mb-20 text-gray-700 flex flex-col pt-40">
       {/* Introduction */}
       <h2 className='font-bold mb-6'><span className="font-bold text-[#5651e5]">Revisiting</span> My Journey through Heartbreak: <span className="font-bold text-[#5651e5]">Reflecting</span> on My Reluctance to Exhibit Vulnerability</h2>
       <p>I'm often told that I'm a rational person.</p>

@@ -33,16 +33,16 @@ const About = () => {
             </p>
             <h3 className='mt-4'>What is this e-Portfolio?</h3>
             <p className='mt-4 text-gray-700'>
-              It is an e-Portfolio mainly crafted for myself, to be a collection of individual reflections over major events at different years of my time in University, and one event prior to University (but rest assured, this event definitely impacted my University journey greatly).
+              It is an e-Portfolio mainly crafted for myself, to be a collection of individual reflections over major events at different years of my time in university, and one event prior to university (but rest assured, this event definitely impacted my university journey greatly).
             </p>
             <p className='mt-4 text-gray-700'>
               At first, the great central theme is <span className='text-[#5651e5] font-bold'>revisiting</span> and <span className='text-[#5651e5] font-bold'>reflecting</span> the different moments of my past which has greatly shaped my perspective as a young adult soon to graduate. Upon further reflection however, I realised that there were particular memories that I gravitate towards revisiting. This epiphany of my meta-reflection is written in my concluding post.
             </p>
             <p className='mt-4 text-gray-700'>
-              Although this e-Portfolio is mainly crafted for myself, I do hope for the people who take the time to read through even one of my posts to have gained a new perspective. Whether it is a small insight on academic rigour, the importance of self reflection, finding a <i>door</i> which has shaped your perspective of reality, or simply a having a relatable moment, my hope is that my honest reflections resonate with you all.
+              Although this e-Portfolio is mainly crafted for myself, I do hope for the people who take the time to read through even one of my posts to have gained a new perspective. Whether it is a small insight on academic rigour, the importance of self reflection, finding a <i>door</i> which has shaped your perspective of reality, or simply a having a relatable moment, my hope is that my honest reflections resonate with you all in one way or another.
             </p>
             <p className='mt-4 text-gray-700'>
-              Beyond that, I also see this as a way to document my growth &#8211; a snapshot of who I am at this pivotal stage of life before transitioning into an eventual career path. By reflecting on these formative experiences, I myself have gained many new perspective along the way, and would continue to do so in the future. Thank you all for joining me on this reflective exploration.
+              Beyond that, I also see this e-Portfolio as a way to document my growth &#8211; a snapshot of who I am at this pivotal stage of life before transitioning into an eventual career path. By reflecting on these formative experiences, I myself have gained many new perspective along the way, and would continue to do so in the future. Thank you all for joining me on this reflective exploration.
             </p>
 
             <h3 className='mt-4'>Why make your own website?</h3>

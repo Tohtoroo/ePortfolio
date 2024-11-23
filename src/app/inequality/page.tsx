@@ -1,6 +1,6 @@
 import type {Metadata} from 'next'
 import Navbar from '../components/Navbar'
-import Heartbreak from '../components/Heartbreak'
+import Inequality from '../components/Inequality'
 
 export const metadata: Metadata = {
   title: 'Path of Reflection Year 2',
@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
-      <Heartbreak/>
+      <Inequality/>
     </div>
   );
 }
