@@ -11,6 +11,7 @@ const Start = () => {
 
   // State to track box clicks and concluding post unlock status
   const [clickedBoxes, setClickedBoxes] = useState([false, false, false, false]);
+  const [intentionalityBoxes, setIntentionalityBoxes] = useState([false, false, false, false]);
   const [isConcludingPostUnlocked, setIsConcludingPostUnlocked] = useState(false);
 
   const router = useRouter();
@@ -109,6 +110,12 @@ const Start = () => {
     }
   };
 
+  const handleIntentionalityBoxClick = (index) => {
+    const updatedBoxes = [...intentionalityBoxes];
+    updatedBoxes[index] = true; // Mark the box as clicked
+    setIntentionalityBoxes(updatedBoxes);
+  };
+
   return (
     <div id='main' className='w-full min-h-screen flex flex-col md:justify-center md:items-center text-center pt-40 md:pt-20'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center'>
@@ -123,14 +130,16 @@ const Start = () => {
 
           {/* Boxes Section */}
           {content[currentStep]?.showBoxes && (
-            <div className='w-full p-8 flex justify-center items-center'>
-              <div className='max-w-[1240px] m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
+            <div className="w-full p-8 flex flex-col items-center">
+              <div className="max-w-[1240px] m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {['Prior to University', 'Year 1', 'Year 2', 'Year 3'].map((label, index) => (
                   <div
                     key={index}
-                    className='rounded-xl shadow-lg p-8 bg-gray-200'
+                    onClick={() => handleIntentionalityBoxClick(index)} // Separate handler for intentionality section
+                    className={`rounded-xl shadow-lg p-8 cursor-pointer transition-all duration-300 ${intentionalityBoxes[index] ? 'bg-gray-400' : 'bg-gray-200 hover:scale-105'
+                      }`}
                   >
-                    <p className='text-gray-700'>{label}</p>
+                    <p className="text-gray-700">{label}</p>
                   </div>
                 ))}
               </div>
