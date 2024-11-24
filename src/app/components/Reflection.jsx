@@ -187,7 +187,6 @@ const Reflection = () => {
             <div className='flex justify-center mt-8'>
               <Link
                 href={reflections[selectedBox].link}
-                target="_blank"
                 rel="noopener noreferrer"
                 className='shadow-xl shadow-gray-400 uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white py-2 px-4 rounded-xl hover:bg-[#4340d2] transition-all duration-300'>
                 {selectedBox === 3 ? 'See Podcast Video' : 'Read Full Post'}
@@ -228,7 +227,6 @@ const Reflection = () => {
         <div className='flex justify-center mt-8'>
           <Link
             href="./conclusion"
-            target="_blank"
             rel="noopener noreferrer"
             className='shadow-xl shadow-gray-400 uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white py-2 px-4 rounded-xl hover:bg-[#4340d2] transition-all duration-300'>
             Read Full Post
