@@ -203,7 +203,7 @@ const Conclusion = () => {
             </div>
 
             <p className='mt-6'>
-                Although I still do not think that I am fully ready to start confidently applying for job positions, reflecting on this experience highlights my key takeaway: the importance in building momentum. By simply starting and confronting my dissatisfaction head on, whether it is learning a new coding language, or signing up for career advisory services, I started building the confidence and momentum that reduced the overwhelming cloud of uncertainty. Instead of just hoping that clarity will fall into my lap one day, I am learning to create it through proactivity. In doing so, I hope to be further empowered by this reflection-in-action, and take further meaningful steps forward in time as I transition into my future career.
+                Although I still do not think that I am fully ready to start confidently applying for job positions, reflecting on this experience highlights my key takeaway: the importance in building momentum. By simply starting and confronting my dissatisfaction head on, whether it is learning a new coding language, or signing up for career advisory services, I started building the confidence and momentum that reduced the overwhelming cloud of uncertainty. Instead of just hoping that clarity will fall into my lap one day, I am learning to create it through proactivity. In doing so, I hope to be further empowered by this reflection-in-action, and take meaningful steps forward in time as I transition into my future career.
             </p>
 
 
