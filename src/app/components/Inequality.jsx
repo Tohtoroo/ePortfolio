@@ -114,7 +114,7 @@ const Inequality = () => {
 
             {/* Figure 3 */}
             <div className="text-center mt-6">
-                <div style={{ display: "flex", justifyContent: "center", cursor: "pointer" }} onClick={() => openModal("/assets/ReflectiveReport.jpg")}>
+                <div style={{ display: "flex", justifyContent: "center", cursor: "pointer" }}>
                     <iframe
                         src="/assets/USR/Inequality_Fig3.pdf"
                         width="60%"

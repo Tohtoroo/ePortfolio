@@ -655,6 +655,15 @@ video {
 .mb-20 {
   margin-bottom: 5rem;
 }
+.ml-6 {
+  margin-left: 1.5rem;
+}
+.ml-4 {
+  margin-left: 1rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .flex {
   display: flex;
 }
@@ -729,6 +738,9 @@ video {
 }
 .list-decimal {
   list-style-type: decimal;
+}
+.list-disc {
+  list-style-type: disc;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -887,6 +899,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .font-bold {
   font-weight: 700;

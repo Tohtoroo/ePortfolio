@@ -1,9 +1,9 @@
 import type {Metadata} from 'next'
 import Navbar from '../components/Navbar'
-import Heartbreak from '../components/Heartbreak'
+import Conclusion from '../components/Conclusion'
 
 export const metadata: Metadata = {
-  title: 'Path of Reflection Year 2',
+  title: 'Path of Reflection Conclusion',
   description: '...',
   icons: {
     icon: '../assets/Logo.png',
@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
-      <Heartbreak/>
+      <Conclusion/>
     </div>
   );
 }
